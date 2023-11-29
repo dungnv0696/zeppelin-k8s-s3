@@ -6,13 +6,13 @@ repo=dungnv0696
 version=0.10.1
 
 # Spark version compatible to the Zeppelin version
-spark_version=3.4.1
+spark_version=3.2.4
 # Hadoop major version
-hadoop_version=3
+hadoop_version=3.2
 # Hadoop minor version
-aws_hadoop_version=3.3.4
+aws_hadoop_version=3.3.1
 # AWS SDK version compatible to the Hadoop version
-aws_sdk_version=1.12.262
+aws_sdk_version=1.11.901
 
 cd zeppelin-distribution-binary
 docker build --build-arg version=$version -t ${repo}/zeppelin-distribution:${version} .
